@@ -11,7 +11,7 @@ First of all thanks to <a href="https://github.com/bonsaiviking">Daniel Miller</
 <h4>Functions:</h4>
 <ul>
 <li><code>block_check</code> - Creates the total block size multiple of 16 (Expects bytearray as parameter)</li>
-<li><code>make_blocks</code> - Splits the block into chunks of size 16 (Expects bytearray block_check[ed] as parameter)</li>
+<li><code>make_blocks</code> - Splits the block into chunks of size 16 (Expects bytearray block_check[ed] as parameter and block size(16) )</li>
 <li><code>AES_128</code> - Main class of project used for encryption and decryption (Expects block of size 16 as parameter)</li>
 </ul>
 
