@@ -3,7 +3,7 @@
 def block_check(txt):
     text = bytearray(txt)
     while len(text) % 16 != 0:
-        text.extend(b'~')
+        text.extend(b'~')       #currently not removed when decrypting
     text = [i for i in text]
     #print(text)
     return text
