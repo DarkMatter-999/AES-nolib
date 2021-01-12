@@ -39,10 +39,13 @@ of = open("decrypted_"+file, 'wb')
 
 data = make_blocks(block_check(bytearray(if_.read())), 16)
 
-for i in data:
+for i in data[0:-1]:
     enc = aes.decrypt(i)
 
     of.write(bytearray(enc))
+
+last = aes.decrypt(data[-1])
+of.write(bytearray(last[0:last.index(126)]))
 
 if_.close()
 of.close()
