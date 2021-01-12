@@ -1,4 +1,4 @@
-
+#By DarkMatter999-dev
 
 def block_check(txt):
     text = bytearray(txt)
@@ -274,7 +274,7 @@ class AES_128(AES):
 
 if __name__ == '__main__':
     crypt = AES_128()
-    crypt.key = key
+    crypt.key = bytearray.fromhex("00112233445566778899aabbccddeeff")
     #expanded = crypt.key_expansion()
     #print(expanded)
 
